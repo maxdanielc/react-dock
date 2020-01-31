@@ -101,10 +101,18 @@ function getDockStyles(
       left: isVisible ? 0 : '-' + absSize
     };
     break;
+    /*
   case 'right':
     posStyle = {
       left: isVisible ? getRestSize(fullWidth) : fullWidth,
       width: absSize
+    };
+    break;
+    */
+  case 'right':
+    posStyle = {
+      left: isVisible ? fullWidth - 300 : fullWidth,
+      width: 300
     };
     break;
   case 'top':
